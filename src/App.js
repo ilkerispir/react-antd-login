@@ -3,8 +3,10 @@ import './App.css';
 import 'antd/dist/antd.css';
 
 import AppHeader from './components/common/header';
-import AppHome from './views/home';
 import AppFooter from './components/common/footer';
+
+import AppHome from './views/home';
+import AppLogin from './components/login/login';
 
 import { Layout } from 'antd';
 
@@ -17,7 +19,7 @@ function App() {
         <AppHeader />
       </Header>
       <Content>
-        <AppHome />
+        <AppLogin />
       </Content>
       <Footer>
        <AppFooter />
