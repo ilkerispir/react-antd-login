@@ -1,23 +1,26 @@
-import React from 'react';
+import { Tabs } from 'antd';
+import AppDataAvailabilityCheck from '../components/home/data-availability-check';
 
-import AppHero from '../components/home/hero';
-import AppAbout from '../components/home/about';
-import AppFeature from '../components/home/feature';
-import AppWorks from '../components/home/works';
-import AppFaq from '../components/home/faq';
-import AppPricing from '../components/home/pricing';
-import AppContact from '../components/home/contact';
+const { TabPane } = Tabs;
+
+function callback(key) {
+  console.log(key);
+}
 
 function AppHome() {
     return (
-        <div className="main">
-            <AppHero />
-            <AppAbout />
-            <AppFeature />
-            <AppWorks />
-            <AppFaq />
-            <AppPricing />
-            <AppContact />
+        <div className="main block">
+            <Tabs defaultActiveKey="1" onChange={callback}>
+                <TabPane tab="Tab 1" key="1">
+                    Content of Tab Pane 1
+                </TabPane>
+                <TabPane tab="Tab 2" key="2">
+                    Content of Tab Pane 2
+                </TabPane>
+                <TabPane tab="Tab 3" key="3">
+                    Content of Tab Pane 3
+                </TabPane>
+            </Tabs>
         </div>
     );
 }

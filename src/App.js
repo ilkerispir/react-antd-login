@@ -19,7 +19,7 @@ function App() {
         <AppHeader />
       </Header>
       <Content>
-        <AppLogin />
+        <AppHome />
       </Content>
       <Footer>
        <AppFooter />
